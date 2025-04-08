@@ -6,14 +6,14 @@
 
         <form wire:submit.prevent="login">
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">email</label>
                 <input for="email" id="email" wire:model="email" class="form-control" placeholder="Ex.: test@gmail.com">
                     @error('email')
                     <span class="text-danger small">{{ $message}} </span>
                     @enderror          
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Senha</label>
+                <label for="password" class="form-label">senha</label>
                 <input type="password" wire:model="password" id="password"
                 class="form-control" placeholder="Informe sua Senha">
                 @error('password')
